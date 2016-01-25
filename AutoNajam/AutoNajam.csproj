@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -103,11 +103,6 @@
     <Compile Include="frmPregled.Designer.cs">
       <DependentUpon>frmPregled.cs</DependentUpon>
     </Compile>
-    <Compile Include="heron_najamDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>heron_najamDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Klase\Automobil.cs" />
     <Compile Include="Klase\Najam.cs" />
     <Compile Include="Klase\Osoba.cs" />
@@ -144,17 +139,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="heron_najamDataSet.xsc">
-      <DependentUpon>heron_najamDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="heron_najamDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>heron_najamDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="heron_najamDataSet.xss">
-      <DependentUpon>heron_najamDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -171,12 +155,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="heron_najam.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="App_Data\heron_sql.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="heron_najam_log.ldf">
-      <DependentUpon>heron_najam.mdf</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="App_Data\heron_sql_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>heron_sql.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

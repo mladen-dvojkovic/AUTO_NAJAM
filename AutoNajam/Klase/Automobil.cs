@@ -12,7 +12,7 @@ namespace AutoNajam.Klase
     {
         public static DataTable GetAutomobili()
         {
-            using (SqlCommand cmd = new SqlCommand("SELECT * FROM Automobil WHERE Izbrisano = 0"))
+            using (SqlCommand cmd = new SqlCommand("SELECT IdAutomobil, Naziv, CijenaPoSatu FROM Automobil WHERE Izbrisano = 0"))
             {
                 return SqlDb.FillTable(cmd);
             }

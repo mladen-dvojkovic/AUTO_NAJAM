@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabIznajmljeno = new System.Windows.Forms.TabPage();
+            this.btnIzbrisiNajam = new System.Windows.Forms.Button();
             this.btn_Zatvori = new System.Windows.Forms.Button();
             this.dgvIznajmljeno = new System.Windows.Forms.DataGridView();
             this.btnPovratAutomobila = new System.Windows.Forms.Button();
@@ -38,10 +39,11 @@
             this.btnNovaOsoba = new System.Windows.Forms.Button();
             this.dgvOsobe = new System.Windows.Forms.DataGridView();
             this.tabAutomobili = new System.Windows.Forms.TabPage();
+            this.btnIzbrisiAutomobil = new System.Windows.Forms.Button();
             this.dgvAutomobili = new System.Windows.Forms.DataGridView();
             this.btnNoviAutomobil = new System.Windows.Forms.Button();
-            this.btnIzbrisiNajam = new System.Windows.Forms.Button();
-            this.btnIzbrisiAutomobil = new System.Windows.Forms.Button();
+            this.btn_zatvori2 = new System.Windows.Forms.Button();
+            this.btn_zatvori3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabIznajmljeno.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIznajmljeno)).BeginInit();
@@ -80,6 +82,16 @@
             this.tabIznajmljeno.Text = "Iznajmljeno";
             this.tabIznajmljeno.UseVisualStyleBackColor = true;
             // 
+            // btnIzbrisiNajam
+            // 
+            this.btnIzbrisiNajam.Location = new System.Drawing.Point(234, 7);
+            this.btnIzbrisiNajam.Name = "btnIzbrisiNajam";
+            this.btnIzbrisiNajam.Size = new System.Drawing.Size(75, 23);
+            this.btnIzbrisiNajam.TabIndex = 2;
+            this.btnIzbrisiNajam.Text = "Izbriši";
+            this.btnIzbrisiNajam.UseVisualStyleBackColor = true;
+            this.btnIzbrisiNajam.Click += new System.EventHandler(this.btnIzbrisiNajam_Click);
+            // 
             // btn_Zatvori
             // 
             this.btn_Zatvori.Location = new System.Drawing.Point(850, 7);
@@ -106,7 +118,7 @@
             this.dgvIznajmljeno.Location = new System.Drawing.Point(7, 36);
             this.dgvIznajmljeno.Name = "dgvIznajmljeno";
             this.dgvIznajmljeno.Size = new System.Drawing.Size(925, 586);
-            this.dgvIznajmljeno.TabIndex = 2;
+            this.dgvIznajmljeno.TabIndex = 4;
             // 
             // btnPovratAutomobila
             // 
@@ -130,6 +142,7 @@
             // 
             // tabOsobe
             // 
+            this.tabOsobe.Controls.Add(this.btn_zatvori2);
             this.tabOsobe.Controls.Add(this.btnNovaOsoba);
             this.tabOsobe.Controls.Add(this.dgvOsobe);
             this.tabOsobe.Location = new System.Drawing.Point(4, 22);
@@ -145,7 +158,7 @@
             this.btnNovaOsoba.Location = new System.Drawing.Point(7, 7);
             this.btnNovaOsoba.Name = "btnNovaOsoba";
             this.btnNovaOsoba.Size = new System.Drawing.Size(79, 23);
-            this.btnNovaOsoba.TabIndex = 4;
+            this.btnNovaOsoba.TabIndex = 2;
             this.btnNovaOsoba.Text = "Nova osoba";
             this.btnNovaOsoba.UseVisualStyleBackColor = true;
             this.btnNovaOsoba.Click += new System.EventHandler(this.btnNovaOsoba_Click);
@@ -171,6 +184,7 @@
             // 
             // tabAutomobili
             // 
+            this.tabAutomobili.Controls.Add(this.btn_zatvori3);
             this.tabAutomobili.Controls.Add(this.btnIzbrisiAutomobil);
             this.tabAutomobili.Controls.Add(this.dgvAutomobili);
             this.tabAutomobili.Controls.Add(this.btnNoviAutomobil);
@@ -181,6 +195,16 @@
             this.tabAutomobili.TabIndex = 2;
             this.tabAutomobili.Text = "Automobili";
             this.tabAutomobili.UseVisualStyleBackColor = true;
+            // 
+            // btnIzbrisiAutomobil
+            // 
+            this.btnIzbrisiAutomobil.Location = new System.Drawing.Point(102, 6);
+            this.btnIzbrisiAutomobil.Name = "btnIzbrisiAutomobil";
+            this.btnIzbrisiAutomobil.Size = new System.Drawing.Size(75, 23);
+            this.btnIzbrisiAutomobil.TabIndex = 3;
+            this.btnIzbrisiAutomobil.Text = "Izbriši";
+            this.btnIzbrisiAutomobil.UseVisualStyleBackColor = true;
+            this.btnIzbrisiAutomobil.Click += new System.EventHandler(this.btnIzbrisiAutomobil_Click);
             // 
             // dgvAutomobili
             // 
@@ -205,30 +229,30 @@
             this.btnNoviAutomobil.Location = new System.Drawing.Point(7, 7);
             this.btnNoviAutomobil.Name = "btnNoviAutomobil";
             this.btnNoviAutomobil.Size = new System.Drawing.Size(89, 23);
-            this.btnNoviAutomobil.TabIndex = 5;
+            this.btnNoviAutomobil.TabIndex = 2;
             this.btnNoviAutomobil.Text = "Novi automobil";
             this.btnNoviAutomobil.UseVisualStyleBackColor = true;
             this.btnNoviAutomobil.Click += new System.EventHandler(this.btnNoviAutomobil_Click);
             // 
-            // btnIzbrisiNajam
+            // btn_zatvori2
             // 
-            this.btnIzbrisiNajam.Location = new System.Drawing.Point(234, 7);
-            this.btnIzbrisiNajam.Name = "btnIzbrisiNajam";
-            this.btnIzbrisiNajam.Size = new System.Drawing.Size(75, 23);
-            this.btnIzbrisiNajam.TabIndex = 4;
-            this.btnIzbrisiNajam.Text = "Izbriši";
-            this.btnIzbrisiNajam.UseVisualStyleBackColor = true;
-            this.btnIzbrisiNajam.Click += new System.EventHandler(this.btnIzbrisiNajam_Click);
+            this.btn_zatvori2.Location = new System.Drawing.Point(851, 6);
+            this.btn_zatvori2.Name = "btn_zatvori2";
+            this.btn_zatvori2.Size = new System.Drawing.Size(75, 23);
+            this.btn_zatvori2.TabIndex = 4;
+            this.btn_zatvori2.Text = "Zatvori";
+            this.btn_zatvori2.UseVisualStyleBackColor = true;
+            this.btn_zatvori2.Click += new System.EventHandler(this.btn_zatvori2_Click);
             // 
-            // btnIzbrisiAutomobil
+            // btn_zatvori3
             // 
-            this.btnIzbrisiAutomobil.Location = new System.Drawing.Point(102, 6);
-            this.btnIzbrisiAutomobil.Name = "btnIzbrisiAutomobil";
-            this.btnIzbrisiAutomobil.Size = new System.Drawing.Size(75, 23);
-            this.btnIzbrisiAutomobil.TabIndex = 7;
-            this.btnIzbrisiAutomobil.Text = "Izbriši";
-            this.btnIzbrisiAutomobil.UseVisualStyleBackColor = true;
-            this.btnIzbrisiAutomobil.Click += new System.EventHandler(this.btnIzbrisiAutomobil_Click);
+            this.btn_zatvori3.Location = new System.Drawing.Point(857, 6);
+            this.btn_zatvori3.Name = "btn_zatvori3";
+            this.btn_zatvori3.Size = new System.Drawing.Size(75, 23);
+            this.btn_zatvori3.TabIndex = 7;
+            this.btn_zatvori3.Text = "Zatvori";
+            this.btn_zatvori3.UseVisualStyleBackColor = true;
+            this.btn_zatvori3.Click += new System.EventHandler(this.btn_zatvori3_Click);
             // 
             // frmPregled
             // 
@@ -266,6 +290,8 @@
         private System.Windows.Forms.Button btn_Zatvori;
         private System.Windows.Forms.Button btnIzbrisiNajam;
         private System.Windows.Forms.Button btnIzbrisiAutomobil;
+        private System.Windows.Forms.Button btn_zatvori2;
+        private System.Windows.Forms.Button btn_zatvori3;
     }
 }
 

@@ -13,7 +13,7 @@ namespace AutoNajam.Klase
     {
         public static SqlConnection GetConnection()
         {
-            return new SqlConnection(ConfigurationManager.ConnectionStrings["autoConnectionString"].ConnectionString);
+            return new SqlConnection(ConfigurationManager.AppSettings["ConnectionString"]);
         }
 
         public static int Execute(SqlCommand cmd)

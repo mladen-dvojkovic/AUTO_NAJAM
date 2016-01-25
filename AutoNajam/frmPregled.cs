@@ -78,7 +78,7 @@ namespace AutoNajam
 
         private void btn_Zatvori_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         /* Izbriši automobil */
@@ -87,6 +87,16 @@ namespace AutoNajam
             frmIzbrisiAutomobil frm = new frmIzbrisiAutomobil();
             frm.FormClosing += frm_FormClosing;
             frm.ShowDialog();
+        }
+
+        private void btn_zatvori2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btn_zatvori3_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
