@@ -44,7 +44,7 @@
             this.btnOdustani.Location = new System.Drawing.Point(230, 75);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(75, 23);
-            this.btnOdustani.TabIndex = 11;
+            this.btnOdustani.TabIndex = 4;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
             this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
@@ -54,7 +54,7 @@
             this.btnSpremi.Location = new System.Drawing.Point(148, 75);
             this.btnSpremi.Name = "btnSpremi";
             this.btnSpremi.Size = new System.Drawing.Size(75, 23);
-            this.btnSpremi.TabIndex = 10;
+            this.btnSpremi.TabIndex = 3;
             this.btnSpremi.Text = "Spremi";
             this.btnSpremi.UseVisualStyleBackColor = true;
             this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click);
@@ -64,7 +64,7 @@
             this.txtNaziv.Location = new System.Drawing.Point(98, 12);
             this.txtNaziv.Name = "txtNaziv";
             this.txtNaziv.Size = new System.Drawing.Size(207, 20);
-            this.txtNaziv.TabIndex = 8;
+            this.txtNaziv.TabIndex = 1;
             // 
             // label1
             // 
@@ -95,7 +95,7 @@
             0});
             this.numCijenaPoSatu.Name = "numCijenaPoSatu";
             this.numCijenaPoSatu.Size = new System.Drawing.Size(92, 20);
-            this.numCijenaPoSatu.TabIndex = 13;
+            this.numCijenaPoSatu.TabIndex = 2;
             this.numCijenaPoSatu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numCijenaPoSatu.ThousandsSeparator = true;
             this.numCijenaPoSatu.Value = new decimal(new int[] {
