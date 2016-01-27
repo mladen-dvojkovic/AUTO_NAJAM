@@ -25,6 +25,25 @@ namespace AutoNajam
             dgvAutomobili.DataSource = cAutomobil.GetAutomobili();
 
             btnPovratAutomobila.Enabled = (cNajam.BrojAutomobilaUNajmu() > 0);
+
+            DataGridViewButtonColumn col = new DataGridViewButtonColumn();
+            col.UseColumnTextForButtonValue = true;
+            col.Text = "Uredi";
+            col.Name = "Uredi";
+            dgvOsobe.Columns.Add(col);
+        }
+
+        /* Respond on click */
+        private void dgvOsobe_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvOsobe.Columns[e.ColumnIndex].Name == "Uredi")
+            {
+                string osoba = dgvOsobe.Rows[e.RowIndex].Cells[0].Value.ToString();
+                frmUrediOsoba frm = new frmUrediOsoba(osoba);
+                frm.FormClosing += frm_FormClosing;
+                frm.ShowDialog();
+            }
+
         }
 
         /* Nova osoba */
@@ -98,5 +117,6 @@ namespace AutoNajam
         {
             Close();
         }
+        
     }
 }

@@ -50,5 +50,7 @@ namespace AutoNajam.Klase
                 return SqlDb.FillTable(cmd);
             }
         }
+
+        
     }
 }

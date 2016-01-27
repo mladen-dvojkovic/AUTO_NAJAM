@@ -15,3 +15,4 @@ D:\My Documents\Mladen\Visual Studio 2015\Projects\AUTO_NAJAM\AutoNajam\obj\Debu
 D:\My Documents\Mladen\Visual Studio 2015\Projects\AUTO_NAJAM\AutoNajam\obj\Debug\AutoNajam.pdb
 D:\My Documents\Mladen\Visual Studio 2015\Projects\AUTO_NAJAM\AutoNajam\bin\Debug\heron_sql.mdf
 D:\My Documents\Mladen\Visual Studio 2015\Projects\AUTO_NAJAM\AutoNajam\bin\Debug\heron_sql_log.ldf
+D:\My Documents\Mladen\Visual Studio 2015\Projects\AUTO_NAJAM\AutoNajam\obj\Debug\AutoNajam.frmUrediOsoba.resources

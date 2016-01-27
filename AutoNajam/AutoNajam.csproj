@@ -103,6 +103,12 @@
     <Compile Include="frmPregled.Designer.cs">
       <DependentUpon>frmPregled.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUrediOsoba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrediOsoba.Designer.cs">
+      <DependentUpon>frmUrediOsoba.cs</DependentUpon>
+    </Compile>
     <Compile Include="Klase\Automobil.cs" />
     <Compile Include="Klase\Najam.cs" />
     <Compile Include="Klase\Osoba.cs" />
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPregled.resx">
       <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrediOsoba.resx">
+      <DependentUpon>frmUrediOsoba.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -36,14 +36,14 @@
             this.btnPovratAutomobila = new System.Windows.Forms.Button();
             this.btnNovoIznajmljivanje = new System.Windows.Forms.Button();
             this.tabOsobe = new System.Windows.Forms.TabPage();
+            this.btn_zatvori2 = new System.Windows.Forms.Button();
             this.btnNovaOsoba = new System.Windows.Forms.Button();
             this.dgvOsobe = new System.Windows.Forms.DataGridView();
             this.tabAutomobili = new System.Windows.Forms.TabPage();
+            this.btn_zatvori3 = new System.Windows.Forms.Button();
             this.btnIzbrisiAutomobil = new System.Windows.Forms.Button();
             this.dgvAutomobili = new System.Windows.Forms.DataGridView();
             this.btnNoviAutomobil = new System.Windows.Forms.Button();
-            this.btn_zatvori2 = new System.Windows.Forms.Button();
-            this.btn_zatvori3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabIznajmljeno.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIznajmljeno)).BeginInit();
@@ -153,6 +153,16 @@
             this.tabOsobe.Text = "Osobe";
             this.tabOsobe.UseVisualStyleBackColor = true;
             // 
+            // btn_zatvori2
+            // 
+            this.btn_zatvori2.Location = new System.Drawing.Point(851, 6);
+            this.btn_zatvori2.Name = "btn_zatvori2";
+            this.btn_zatvori2.Size = new System.Drawing.Size(75, 23);
+            this.btn_zatvori2.TabIndex = 4;
+            this.btn_zatvori2.Text = "Zatvori";
+            this.btn_zatvori2.UseVisualStyleBackColor = true;
+            this.btn_zatvori2.Click += new System.EventHandler(this.btn_zatvori2_Click);
+            // 
             // btnNovaOsoba
             // 
             this.btnNovaOsoba.Location = new System.Drawing.Point(7, 7);
@@ -181,6 +191,7 @@
             this.dgvOsobe.ShowEditingIcon = false;
             this.dgvOsobe.Size = new System.Drawing.Size(925, 586);
             this.dgvOsobe.TabIndex = 3;
+            this.dgvOsobe.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOsobe_CellClick);
             // 
             // tabAutomobili
             // 
@@ -195,6 +206,16 @@
             this.tabAutomobili.TabIndex = 2;
             this.tabAutomobili.Text = "Automobili";
             this.tabAutomobili.UseVisualStyleBackColor = true;
+            // 
+            // btn_zatvori3
+            // 
+            this.btn_zatvori3.Location = new System.Drawing.Point(857, 6);
+            this.btn_zatvori3.Name = "btn_zatvori3";
+            this.btn_zatvori3.Size = new System.Drawing.Size(75, 23);
+            this.btn_zatvori3.TabIndex = 7;
+            this.btn_zatvori3.Text = "Zatvori";
+            this.btn_zatvori3.UseVisualStyleBackColor = true;
+            this.btn_zatvori3.Click += new System.EventHandler(this.btn_zatvori3_Click);
             // 
             // btnIzbrisiAutomobil
             // 
@@ -233,26 +254,6 @@
             this.btnNoviAutomobil.Text = "Novi automobil";
             this.btnNoviAutomobil.UseVisualStyleBackColor = true;
             this.btnNoviAutomobil.Click += new System.EventHandler(this.btnNoviAutomobil_Click);
-            // 
-            // btn_zatvori2
-            // 
-            this.btn_zatvori2.Location = new System.Drawing.Point(851, 6);
-            this.btn_zatvori2.Name = "btn_zatvori2";
-            this.btn_zatvori2.Size = new System.Drawing.Size(75, 23);
-            this.btn_zatvori2.TabIndex = 4;
-            this.btn_zatvori2.Text = "Zatvori";
-            this.btn_zatvori2.UseVisualStyleBackColor = true;
-            this.btn_zatvori2.Click += new System.EventHandler(this.btn_zatvori2_Click);
-            // 
-            // btn_zatvori3
-            // 
-            this.btn_zatvori3.Location = new System.Drawing.Point(857, 6);
-            this.btn_zatvori3.Name = "btn_zatvori3";
-            this.btn_zatvori3.Size = new System.Drawing.Size(75, 23);
-            this.btn_zatvori3.TabIndex = 7;
-            this.btn_zatvori3.Text = "Zatvori";
-            this.btn_zatvori3.UseVisualStyleBackColor = true;
-            this.btn_zatvori3.Click += new System.EventHandler(this.btn_zatvori3_Click);
             // 
             // frmPregled
             // 
